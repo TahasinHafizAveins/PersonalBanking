@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userAuth.userReg.RegistrationActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/mer_10dp"
+        android:padding="@dimen/padding_8dp">
+
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="User Name :"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/et_userName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_17"
+            android:hint="aveins"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_password"
+        android:layout_below="@+id/layout_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:layout_margin="@dimen/mer_10dp"
+        android:padding="@dimen/padding_8dp">
+
+        <TextView
+            android:id="@+id/tv_userpw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Password :"
+            android:textSize="@dimen/sp_17"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+        <EditText
+            android:id="@+id/et_usepw"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="@dimen/sp_17"
+            android:inputType="textPassword"
+            android:hint="*****"
+            android:textAlignment="textEnd"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

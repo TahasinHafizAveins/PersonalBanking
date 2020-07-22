@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">PersonalBanking</string>
+    <string name="balance_history">Balance History</string>
+    <string name="share_balance">Share Balance</string>
+    <string name="cash_out">Cash Out</string>
+    <string name="main_balance">Main Balance</string>
+    <string name="add_balance">Add Balance</string>
+</resources>
