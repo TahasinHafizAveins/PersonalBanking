@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "562467904122",
+    "firebase_url": "https://personal-banking-5f430.firebaseio.com",
+    "project_id": "personal-banking-5f430",
+    "storage_bucket": "personal-banking-5f430.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:562467904122:android:9c9d3802985a3ce424b9c3",
+        "android_client_info": {
+          "package_name": "com.iotsoftbd.personalbanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "562467904122-ch1eebr5gj7qa5tr7lri213nmhohl1vl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iotsoftbd.personalbanking",
+            "certificate_hash": "1f11f4904f52e3990e9828262381fc40fb20a74d"
+          }
+        },
+        {
+          "client_id": "562467904122-i4iaog44opu052rea6l992c7ilu3oace.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRO-UrLx5jG1JoHlVxV_62swADrqTvCME"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "562467904122-i4iaog44opu052rea6l992c7ilu3oace.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

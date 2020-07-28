@@ -2,5 +2,18 @@
 <resources>
     <color name="colorPrimary">#6200EE</color>
     <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorAccent">#53109F</color>
+
+    <color name="colorTextFiled">#D7512DA8</color>
+    <color name="bgBackSideColor">#f4f0ff</color>
+    <color name="darkTextColor">#555555</color>
+    <color name="textcolor">#141414</color>
+    <color name="texthintColor">#F84B4646</color>
+    <color name="backcolor">#D3030303</color>
+    <color name="red">#D60606</color>
+    <color name="btnfloating">#FFD500</color>
+    <color name="textcolor_bl">#8A9EAD</color>
+    <color name="colorPrimary_1">@android:color/white</color>
+    <color name="colorPrimaryDark_1">@android:color/white</color>
+    <color name="lvlColor">#5900B3</color>
 </resources>
