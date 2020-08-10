@@ -14,7 +14,9 @@ import android.widget.TextView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.iotsoftbd.personalbanking.R;
+import com.iotsoftbd.personalbanking.ui.fragments.addNewAcc.AddNewAccFragment;
 import com.iotsoftbd.personalbanking.ui.fragments.home.HomeFragment;
+import com.iotsoftbd.personalbanking.ui.resetPS.ResetPassword;
 import com.iotsoftbd.personalbanking.ui.userAuth.userLogin.LoginActivity;
 
 public class MainActivity extends AppCompatActivity implements MainContact.View {
@@ -108,6 +110,31 @@ public class MainActivity extends AppCompatActivity implements MainContact.View 
                     e.printStackTrace();
                 }
 
+            }
+        });
+
+        //Nav--> addAccount
+        llDrawerNewAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    drawer.closeDrawer(GravityCompat.START);
+                    getSupportFragmentManager().beginTransaction().replace(R.id.mainContainer,new AddNewAccFragment()).commit();
+                    toolbar.setFocusableInTouchMode(true);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+        llDrawerResetPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ResetPassword.class);
+                intent.putExtra("ACTIVITY", "main");
+                startActivity(intent);
             }
         });
 

@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.google.android.material.textfield.TextInputEditText;
+import com.iotsoftbd.personalbanking.ui.resetPS.ResetPassword;
 import com.iotsoftbd.personalbanking.ui.userMain.MainActivity;
 import com.iotsoftbd.personalbanking.R;
 import com.iotsoftbd.personalbanking.models.User;
@@ -61,6 +62,15 @@ public class LoginActivity extends AppCompatActivity implements LoginContract.Vi
                     return;
                 }
                 mPresenter.signIn(user);
+            }
+        });
+
+        forget_ps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this, ResetPassword.class);
+                intent.putExtra("ACTIVITY", "login");
+                startActivity(intent);
             }
         });
     }

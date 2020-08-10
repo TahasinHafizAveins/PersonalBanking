@@ -1,5 +1,6 @@
 package com.iotsoftbd.personalbanking.ui.fragments.home;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -14,6 +15,8 @@ import com.iotsoftbd.personalbanking.R;
 import com.iotsoftbd.personalbanking.adapter.CustomAdapterGridView;
 import com.iotsoftbd.personalbanking.ui.fragments.addMoney.AddMoneyFragment;
 import com.iotsoftbd.personalbanking.ui.fragments.addNewAcc.AddNewAccFragment;
+import com.iotsoftbd.personalbanking.ui.resetPS.ResetPassword;
+import com.iotsoftbd.personalbanking.ui.userMain.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -69,39 +72,42 @@ public class HomeFragment extends Fragment {
                     gridView.setEnabled(false);
 
                     if (position == 0) {
-
+                        //New Account Request
                         HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.mainContainer, addNewAccFragment, "findThisFragment")
                                 .addToBackStack(null)
                                 .commit();
 
                     } else if (position == 1) {
+                        //Add money
                         HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.mainContainer, addMoneyFragment, "findThisFragment")
                                 .addToBackStack(null)
                                 .commit();
                     } else if (position == 2) {
-
+                        //View Account Details
                         HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.mainContainer, addNewAccFragment, "findThisFragment")
                                 .addToBackStack(null)
                                 .commit();
 
                     } else if (position == 3) {
+                        //View Transaction
                         HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.mainContainer, addNewAccFragment, "findThisFragment")
                                 .addToBackStack(null)
                                 .commit();
                     } else if (position == 4) {
+                        //Transfer Money
                         HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
                                 .replace(R.id.mainContainer, addNewAccFragment, "findThisFragment")
                                 .addToBackStack(null)
                                 .commit();
                     } else if (position == 5) {
-                        HomeFragment.this.getActivity().getSupportFragmentManager().beginTransaction()
-                                .replace(R.id.mainContainer, addNewAccFragment, "findThisFragment")
-                                .addToBackStack(null)
-                                .commit();
+                        //Reset Password
+                        Intent intent = new Intent(getContext(), ResetPassword.class);
+                        intent.putExtra("ACTIVITY", "main");
+                        startActivity(intent);
                     } else gridView.setEnabled(true);
 
                 } catch (Exception e) {
