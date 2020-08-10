@@ -12,7 +12,7 @@ import com.iotsoftbd.personalbanking.ui.fragments.home.HomeFragment;
 
 
 /**
- * Created by Simon - Solshare on 12/16/2017.
+ * Created by Aveins
  */
 
 public class CustomAdapterGridView extends BaseAdapter {
