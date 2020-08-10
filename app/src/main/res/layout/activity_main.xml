@@ -9,17 +9,17 @@
     android:background="@android:color/white"
     android:fitsSystemWindows="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="8dp"
-        android:orientation="vertical">
+        >
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_home_activity"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorAccent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorAccent_2"
+            android:layout_alignParentTop="true"
             app:title="">
 
             <TextView
@@ -34,19 +34,15 @@
 
         </androidx.appcompat.widget.Toolbar>
 
-        <GridView
-            android:id="@+id/gridView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:background="@android:color/transparent"
-            android:columnWidth="75dip"
-            android:gravity="center"
-            android:numColumns="2"
-            android:stretchMode="columnWidth"
-            android:verticalSpacing="20dp" />
 
-    </LinearLayout>
+
+        <FrameLayout
+            android:layout_below="@+id/toolbar_home_activity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mainContainer" />
+
+    </RelativeLayout>
 
     <include layout="@layout/layout_nav_view" />
 

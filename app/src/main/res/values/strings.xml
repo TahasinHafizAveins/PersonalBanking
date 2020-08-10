@@ -8,7 +8,7 @@
     <string name="enter_your_e_mail">Enter your e-mail address</string>
     <string name="password">Enter your password</string>
     <string name="login">Login</string>
-    <string name="no_account_yet_create_one" >Dont have an account? SIGN UP</string>
+    <string name="no_account_yet_create_one">Dont have an account? SIGN UP</string>
     <string name="already_a_member_login">Already a member? LOGIN.</string>
     <string name="create_account">SIGN UP</string>
     <string name="re_enter_password">Re-enter Password</string>
@@ -47,4 +47,10 @@
 
     <string name="navigation_drawer_open">open</string>
     <string name="navigation_drawer_close">close</string>
+    <string name="txt_acc_type">Account Type</string>
+    <string name="txt_select_branch">Select Branch</string>
+    <string name="txt_acc_number">Account Number</string>
+    <string name="txt_current_balance">Current Balance</string>
+    <string name="txt_nid">NID</string>
+    <string name="txt_logout">LogOut</string>
 </resources>

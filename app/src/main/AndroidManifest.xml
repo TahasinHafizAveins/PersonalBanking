@@ -14,13 +14,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".accounceSection.home.AccounceHomeActivity"></activity>
-        <activity android:name=".accounceSection.CashoutActivity" />
-        <activity android:name=".accounceSection.AddBalanceActivity" />
-        <activity android:name=".accounceSection.mainBalance.MainBalenceActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".userAuth.userogin.LoginActivity" />
-        <activity android:name=".userAuth.userReg.RegistrationActivity">
+        <activity android:name=".ui.fragments.accountSection.mainBalance.MainBalenceActivity" />
+        <activity android:name=".ui.userAuth.userLogin.LoginActivity" />
+        <activity android:name=".ui.userAuth.userReg.RegistrationActivity"/>
+        <activity android:name=".ui.userMain.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
